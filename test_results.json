@@ -1,0 +1,240 @@
+{
+  "timestamp": "2025-11-05T23:30:38.963773",
+  "summary": {
+    "total": 38,
+    "passed": 36,
+    "failed": 1,
+    "skipped": 1,
+    "grade": "B+"
+  },
+  "tests": [
+    {
+      "test": "Required packages installed",
+      "status": "PASS",
+      "details": "sklearn=1.7.2, mlflow=3.5.1",
+      "timestamp": "2025-11-05T23:30:38.488498"
+    },
+    {
+      "test": "Directory: src/data_collection",
+      "status": "PASS",
+      "details": "",
+      "timestamp": "2025-11-05T23:30:38.489058"
+    },
+    {
+      "test": "Directory: src/preprocessing",
+      "status": "PASS",
+      "details": "",
+      "timestamp": "2025-11-05T23:30:38.489285"
+    },
+    {
+      "test": "Directory: src/models",
+      "status": "PASS",
+      "details": "",
+      "timestamp": "2025-11-05T23:30:38.489436"
+    },
+    {
+      "test": "Directory: src/training",
+      "status": "PASS",
+      "details": "",
+      "timestamp": "2025-11-05T23:30:38.489601"
+    },
+    {
+      "test": "Directory: src/deployment",
+      "status": "PASS",
+      "details": "",
+      "timestamp": "2025-11-05T23:30:38.489794"
+    },
+    {
+      "test": "Directory: src/monitoring",
+      "status": "PASS",
+      "details": "",
+      "timestamp": "2025-11-05T23:30:38.489952"
+    },
+    {
+      "test": "Directory: data/raw",
+      "status": "PASS",
+      "details": "",
+      "timestamp": "2025-11-05T23:30:38.490108"
+    },
+    {
+      "test": "Directory: data/processed",
+      "status": "PASS",
+      "details": "",
+      "timestamp": "2025-11-05T23:30:38.490275"
+    },
+    {
+      "test": "Directory: data/features",
+      "status": "PASS",
+      "details": "",
+      "timestamp": "2025-11-05T23:30:38.490431"
+    },
+    {
+      "test": "Directory: config",
+      "status": "PASS",
+      "details": "",
+      "timestamp": "2025-11-05T23:30:38.490610"
+    },
+    {
+      "test": "Directory: tests",
+      "status": "PASS",
+      "details": "",
+      "timestamp": "2025-11-05T23:30:38.490760"
+    },
+    {
+      "test": "Config file structure",
+      "status": "PASS",
+      "details": "Found 13 config sections",
+      "timestamp": "2025-11-05T23:30:38.502612"
+    },
+    {
+      "test": "Historical data available",
+      "status": "PASS",
+      "details": "Found 1 file(s)",
+      "timestamp": "2025-11-05T23:30:38.504446"
+    },
+    {
+      "test": "Data file readable",
+      "status": "PASS",
+      "details": "5000 records",
+      "timestamp": "2025-11-05T23:30:38.569274"
+    },
+    {
+      "test": "Data schema validation",
+      "status": "PASS",
+      "details": "All required fields present",
+      "timestamp": "2025-11-05T23:30:38.570020"
+    },
+    {
+      "test": "Sensor data structure",
+      "status": "PASS",
+      "details": "Sensors: temperature, vibration, pressure, current, rpm",
+      "timestamp": "2025-11-05T23:30:38.570258"
+    },
+    {
+      "test": "Real-time sensor data",
+      "status": "PASS",
+      "details": "Found 36 file(s)",
+      "timestamp": "2025-11-05T23:30:38.570397"
+    },
+    {
+      "test": "Feature extraction",
+      "status": "PASS",
+      "details": "Extracted 5 features from 100 samples",
+      "timestamp": "2025-11-05T23:30:38.631202"
+    },
+    {
+      "test": "Data quality check",
+      "status": "PASS",
+      "details": "No missing values",
+      "timestamp": "2025-11-05T23:30:38.631542"
+    },
+    {
+      "test": "Feature range: temperature",
+      "status": "PASS",
+      "details": "Range: 57.76 to 62.13",
+      "timestamp": "2025-11-05T23:30:38.632010"
+    },
+    {
+      "test": "Feature range: vibration",
+      "status": "PASS",
+      "details": "Range: 4.78 to 5.26",
+      "timestamp": "2025-11-05T23:30:38.632278"
+    },
+    {
+      "test": "Feature range: pressure",
+      "status": "PASS",
+      "details": "Range: 93.68 to 105.01",
+      "timestamp": "2025-11-05T23:30:38.632511"
+    },
+    {
+      "test": "Feature range: current",
+      "status": "PASS",
+      "details": "Range: 24.01 to 26.19",
+      "timestamp": "2025-11-05T23:30:38.632836"
+    },
+    {
+      "test": "Feature range: rpm",
+      "status": "PASS",
+      "details": "Range: 1901.44 to 2072.04",
+      "timestamp": "2025-11-05T23:30:38.633035"
+    },
+    {
+      "test": "Data splitting",
+      "status": "PASS",
+      "details": "Train: 80, Test: 20",
+      "timestamp": "2025-11-05T23:30:38.862890"
+    },
+    {
+      "test": "Model training",
+      "status": "PASS",
+      "details": "Completed in 0.03s",
+      "timestamp": "2025-11-05T23:30:38.891754"
+    },
+    {
+      "test": "Model accuracy",
+      "status": "PASS",
+      "details": "100.00%",
+      "timestamp": "2025-11-05T23:30:38.915980"
+    },
+    {
+      "test": "F1 Score",
+      "status": "FAIL",
+      "details": "0.0000",
+      "timestamp": "2025-11-05T23:30:38.916126"
+    },
+    {
+      "test": "Prediction capability",
+      "status": "PASS",
+      "details": "Predicted: NORMAL (confidence: 100.00%)",
+      "timestamp": "2025-11-05T23:30:38.953359"
+    },
+    {
+      "test": "Saved models found",
+      "status": "SKIP",
+      "details": "No saved models yet",
+      "timestamp": "2025-11-05T23:30:38.954383"
+    },
+    {
+      "test": "API file exists",
+      "status": "PASS",
+      "details": "src\\deployment\\api.py",
+      "timestamp": "2025-11-05T23:30:38.954940"
+    },
+    {
+      "test": "API module loadable",
+      "status": "PASS",
+      "details": "",
+      "timestamp": "2025-11-05T23:30:38.955268"
+    },
+    {
+      "test": "Logs directory",
+      "status": "PASS",
+      "details": "Already exists",
+      "timestamp": "2025-11-05T23:30:38.955776"
+    },
+    {
+      "test": "Logging system",
+      "status": "PASS",
+      "details": "Logger configured successfully",
+      "timestamp": "2025-11-05T23:30:38.961043"
+    },
+    {
+      "test": "Package initialization: src/__init__.py",
+      "status": "PASS",
+      "details": "",
+      "timestamp": "2025-11-05T23:30:38.961588"
+    },
+    {
+      "test": "Package initialization: src/models/__init__.py",
+      "status": "PASS",
+      "details": "",
+      "timestamp": "2025-11-05T23:30:38.961814"
+    },
+    {
+      "test": "Package initialization: src/preprocessing/__init__.py",
+      "status": "PASS",
+      "details": "",
+      "timestamp": "2025-11-05T23:30:38.961967"
+    }
+  ]
+}

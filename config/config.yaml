@@ -1,0 +1,204 @@
+# Main Project Configuration
+
+project:
+  name: "predictive_maintenance"
+  version: "1.0.0"
+  description: "Predictive Maintenance MLOps System"
+
+# Data Configuration
+data:
+  raw_data_path: "data/raw"
+  processed_data_path: "data/processed"
+  features_path: "data/features"
+  
+  # Sensor types and thresholds
+  sensors:
+    - name: "temperature"
+      unit: "celsius"
+      normal_range: [20, 80]
+      critical_threshold: 90
+    - name: "vibration"
+      unit: "mm/s"
+      normal_range: [0, 10]
+      critical_threshold: 15
+    - name: "pressure"
+      unit: "psi"
+      normal_range: [80, 120]
+      critical_threshold: 140
+    - name: "current"
+      unit: "ampere"
+      normal_range: [0, 50]
+      critical_threshold: 60
+    - name: "rpm"
+      unit: "revolutions_per_minute"
+      normal_range: [1000, 3000]
+      critical_threshold: 3500
+
+# Feature Engineering
+features:
+  window_sizes: [5, 10, 30, 60]  # minutes
+  statistical_features:
+    - "mean"
+    - "std"
+    - "min"
+    - "max"
+    - "median"
+    - "skew"
+    - "kurtosis"
+  derived_features:
+    - "rolling_mean"
+    - "rolling_std"
+    - "rate_of_change"
+    - "time_since_last_maintenance"
+    - "operating_hours"
+
+# Model Configuration
+models:
+  random_forest:
+    n_estimators: 100
+    max_depth: 10
+    min_samples_split: 2
+    min_samples_leaf: 1
+    random_state: 42
+  
+  xgboost:
+    n_estimators: 100
+    max_depth: 6
+    learning_rate: 0.1
+    subsample: 0.8
+    colsample_bytree: 0.8
+    random_state: 42
+  
+  lstm:
+    units: [64, 32]
+    dropout: 0.2
+    sequence_length: 60
+    batch_size: 32
+    epochs: 50
+    learning_rate: 0.001
+
+# Training Configuration
+training:
+  test_size: 0.2
+  validation_size: 0.1
+  random_state: 42
+  cross_validation_folds: 5
+  
+  # Hyperparameter tuning
+  hyperparameter_tuning:
+    enabled: true
+    method: "optuna"  # or "grid_search", "random_search"
+    n_trials: 100
+    timeout: 3600  # seconds
+
+# MLflow Configuration
+mlflow:
+  tracking_uri: "http://localhost:5000"
+  experiment_name: "predictive_maintenance"
+  registered_model_name: "maintenance_predictor"
+  artifact_location: "mlruns"
+
+# Deployment Configuration
+deployment:
+  api:
+    host: "0.0.0.0"
+    port: 8000
+    workers: 4
+    timeout: 60
+  
+  model_serving:
+    framework: "fastapi"
+    batch_size: 32
+    max_latency_ms: 100
+  
+  edge:
+    enabled: true
+    model_format: "onnx"  # or "tflite"
+    optimization: "quantization"
+
+# Cloud Configuration
+cloud:
+  provider: "aws"  # or "azure", "gcp"
+  
+  aws:
+    region: "us-east-1"
+    s3_bucket: "predictive-maintenance-data"
+    sagemaker:
+      instance_type: "ml.m5.xlarge"
+      model_name: "maintenance-predictor"
+  
+  azure:
+    resource_group: "ml-resources"
+    workspace_name: "maintenance-ml-workspace"
+    compute_target: "ml-cluster"
+  
+  gcp:
+    project_id: "predictive-maintenance"
+    region: "us-central1"
+    bucket: "maintenance-ml-data"
+
+# Monitoring Configuration
+monitoring:
+  performance_metrics:
+    - "accuracy"
+    - "precision"
+    - "recall"
+    - "f1_score"
+    - "auc_roc"
+  
+  drift_detection:
+    enabled: true
+    check_interval_hours: 24
+    statistical_test: "ks"  # Kolmogorov-Smirnov
+    threshold: 0.05
+  
+  alerting:
+    slack:
+      enabled: true
+      webhook_url: "${SLACK_WEBHOOK_URL}"
+    email:
+      enabled: true
+      smtp_server: "smtp.gmail.com"
+      smtp_port: 587
+      recipients: ["alerts@example.com"]
+    
+  thresholds:
+    accuracy_min: 0.85
+    precision_min: 0.80
+    recall_min: 0.80
+    drift_threshold: 0.05
+
+# Database Configuration
+database:
+  type: "postgresql"
+  host: "localhost"
+  port: 5432
+  name: "maintenance_db"
+  user: "${DB_USER}"
+  password: "${DB_PASSWORD}"
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/application.log"
+  rotation: "10 MB"
+  retention: "30 days"
+
+# Airflow Configuration
+airflow:
+  dags_folder: "airflow/dags"
+  schedule_interval: "@daily"
+  retries: 3
+  retry_delay_minutes: 5
+
+# Security
+security:
+  encryption:
+    enabled: true
+    algorithm: "AES-256"
+  authentication:
+    enabled: true
+    method: "jwt"
+  rbac:
+    enabled: true

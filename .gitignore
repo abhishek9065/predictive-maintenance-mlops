@@ -1,0 +1,119 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# DVC
+.dvc/config.local
+.dvc/tmp/
+.dvc/cache/
+
+# Data (tracked by DVC - keep .dvc files)
+data/raw/*
+data/processed/*
+data/features/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/features/.gitkeep
+!data/**/*.dvc
+
+# Models (tracked by DVC - keep .dvc files)
+models/*
+!models/.gitkeep
+!models/**/*.dvc
+*.h5
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.onnx
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Docker
+.dockerignore
+
+# Airflow
+airflow/logs/
+airflow/dags/__pycache__/
+airflow.db
+airflow.cfg
+
+# Cloud credentials
+*.pem
+*.key
+credentials.json
+service-account.json
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Secrets
+secrets/
+*.secret
+
+# Temporary files
+*.tmp
+tmp/
+temp/
+
+# OS
+Thumbs.db
+/models

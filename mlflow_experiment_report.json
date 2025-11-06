@@ -1,0 +1,1003 @@
+{
+  "experiment_name": "predictive_maintenance",
+  "experiment_id": "271737561769473304",
+  "total_runs": 33,
+  "generated_at": "2025-11-06T00:18:08.348087",
+  "runs": [
+    {
+      "run_id": "14eff779e5004fe7b022a80536f62f6a",
+      "start_time": "2025-11-06T00:18:00.039000",
+      "status": "FINISHED",
+      "metrics": {
+        "n_samples_test": 1000.0,
+        "n_samples_train": 4000.0,
+        "overfitting_gap": 0.0,
+        "test_accuracy": 1.0,
+        "test_f1_score": 1.0,
+        "test_precision": 1.0,
+        "test_recall": 1.0,
+        "test_roc_auc": 1.0,
+        "training_time_seconds": 0.031982,
+        "train_accuracy": 1.0,
+        "train_f1_score": 1.0,
+        "train_precision": 1.0,
+        "train_recall": 1.0
+      },
+      "params": {
+        "max_iter": "1000",
+        "model_type": "LogisticRegression",
+        "random_state": "42",
+        "solver": "lbfgs"
+      },
+      "tags": {
+        "data_version": "v1.0",
+        "mlflow.runName": "logistic_regression",
+        "mlflow.source.name": "C:\\Users\\abhis\\Downloads\\Data Science 2.0\\MLops\\mlflow_advanced.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis",
+        "model_type": "LogisticRegression",
+        "training_date": "2025-11-06T00:18:07.753144"
+      }
+    },
+    {
+      "run_id": "f2664e3a2a2d44cf872d5d41fefc9513",
+      "start_time": "2025-11-06T00:17:51.438000",
+      "status": "FINISHED",
+      "metrics": {
+        "n_samples_test": 1000.0,
+        "n_samples_train": 4000.0,
+        "overfitting_gap": 0.0,
+        "test_accuracy": 1.0,
+        "test_f1_score": 1.0,
+        "test_precision": 1.0,
+        "test_recall": 1.0,
+        "test_roc_auc": 1.0,
+        "training_time_seconds": 0.658183,
+        "train_accuracy": 1.0,
+        "train_f1_score": 1.0,
+        "train_precision": 1.0,
+        "train_recall": 1.0
+      },
+      "params": {
+        "learning_rate": "0.05",
+        "max_depth": "7",
+        "model_type": "GradientBoosting",
+        "n_estimators": "200",
+        "random_state": "42",
+        "subsample": "0.8"
+      },
+      "tags": {
+        "data_version": "v1.0",
+        "mlflow.runName": "gradient_boosting_tuned",
+        "mlflow.source.name": "C:\\Users\\abhis\\Downloads\\Data Science 2.0\\MLops\\mlflow_advanced.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis",
+        "model_type": "GradientBoostingClassifier",
+        "training_date": "2025-11-06T00:18:00.024000"
+      }
+    },
+    {
+      "run_id": "24e0297dbfd04133aa31edf13e40e025",
+      "start_time": "2025-11-06T00:17:43.428000",
+      "status": "FINISHED",
+      "metrics": {
+        "n_samples_test": 1000.0,
+        "n_samples_train": 4000.0,
+        "overfitting_gap": 0.0,
+        "test_accuracy": 1.0,
+        "test_f1_score": 1.0,
+        "test_precision": 1.0,
+        "test_recall": 1.0,
+        "test_roc_auc": 1.0,
+        "training_time_seconds": 0.454178,
+        "train_accuracy": 1.0,
+        "train_f1_score": 1.0,
+        "train_precision": 1.0,
+        "train_recall": 1.0
+      },
+      "params": {
+        "learning_rate": "0.1",
+        "max_depth": "5",
+        "model_type": "GradientBoosting",
+        "n_estimators": "100",
+        "random_state": "42"
+      },
+      "tags": {
+        "data_version": "v1.0",
+        "mlflow.runName": "gradient_boosting",
+        "mlflow.source.name": "C:\\Users\\abhis\\Downloads\\Data Science 2.0\\MLops\\mlflow_advanced.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis",
+        "model_type": "GradientBoostingClassifier",
+        "training_date": "2025-11-06T00:17:51.418682"
+      }
+    },
+    {
+      "run_id": "4c395b2ce3c44e8fac09f3b422745e73",
+      "start_time": "2025-11-06T00:17:35.111000",
+      "status": "FINISHED",
+      "metrics": {
+        "n_samples_test": 1000.0,
+        "n_samples_train": 4000.0,
+        "overfitting_gap": 0.0,
+        "test_accuracy": 1.0,
+        "test_f1_score": 1.0,
+        "test_precision": 1.0,
+        "test_recall": 1.0,
+        "test_roc_auc": 1.0,
+        "training_time_seconds": 0.472759,
+        "train_accuracy": 1.0,
+        "train_f1_score": 1.0,
+        "train_precision": 1.0,
+        "train_recall": 1.0
+      },
+      "params": {
+        "max_depth": "20",
+        "min_samples_split": "5",
+        "model_type": "RandomForest",
+        "n_estimators": "200",
+        "random_state": "42"
+      },
+      "tags": {
+        "data_version": "v1.0",
+        "mlflow.runName": "random_forest_tuned",
+        "mlflow.source.name": "C:\\Users\\abhis\\Downloads\\Data Science 2.0\\MLops\\mlflow_advanced.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis",
+        "model_type": "RandomForestClassifier",
+        "training_date": "2025-11-06T00:17:43.415110"
+      }
+    },
+    {
+      "run_id": "83f34edc86d245d8931e09fb64b985cb",
+      "start_time": "2025-11-06T00:17:22.009000",
+      "status": "FINISHED",
+      "metrics": {
+        "n_samples_test": 1000.0,
+        "n_samples_train": 4000.0,
+        "overfitting_gap": 0.0,
+        "test_accuracy": 1.0,
+        "test_f1_score": 1.0,
+        "test_precision": 1.0,
+        "test_recall": 1.0,
+        "test_roc_auc": 1.0,
+        "training_time_seconds": 0.299341,
+        "train_accuracy": 1.0,
+        "train_f1_score": 1.0,
+        "train_precision": 1.0,
+        "train_recall": 1.0
+      },
+      "params": {
+        "max_depth": "None",
+        "model_type": "RandomForest",
+        "n_estimators": "100",
+        "random_state": "42"
+      },
+      "tags": {
+        "data_version": "v1.0",
+        "mlflow.runName": "random_forest_baseline",
+        "mlflow.source.name": "C:\\Users\\abhis\\Downloads\\Data Science 2.0\\MLops\\mlflow_advanced.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis",
+        "model_type": "RandomForestClassifier",
+        "training_date": "2025-11-06T00:17:35.095158"
+      }
+    },
+    {
+      "run_id": "07ec7345dad24f09912761eb842f19a2",
+      "start_time": "2025-11-06T00:10:00.658000",
+      "status": "FINISHED",
+      "metrics": {
+        "n_samples_test": 1000.0,
+        "n_samples_train": 4000.0,
+        "overfitting_gap": 0.0,
+        "test_accuracy": 1.0,
+        "test_f1_score": 1.0,
+        "test_precision": 1.0,
+        "test_recall": 1.0,
+        "test_roc_auc": 1.0,
+        "training_time_seconds": 0.026533,
+        "train_accuracy": 1.0,
+        "train_f1_score": 1.0,
+        "train_precision": 1.0,
+        "train_recall": 1.0
+      },
+      "params": {
+        "max_iter": "1000",
+        "model_type": "LogisticRegression",
+        "random_state": "42",
+        "solver": "lbfgs"
+      },
+      "tags": {
+        "data_version": "v1.0",
+        "mlflow.runName": "logistic_regression",
+        "mlflow.source.name": "C:\\Users\\abhis\\Downloads\\Data Science 2.0\\MLops\\mlflow_advanced.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis",
+        "model_type": "LogisticRegression",
+        "training_date": "2025-11-06T00:10:07.587898"
+      }
+    },
+    {
+      "run_id": "96edbffab61f4ac9b007b5355a2e2c17",
+      "start_time": "2025-11-06T00:09:53.079000",
+      "status": "FINISHED",
+      "metrics": {
+        "n_samples_test": 1000.0,
+        "n_samples_train": 4000.0,
+        "overfitting_gap": 0.0,
+        "test_accuracy": 1.0,
+        "test_f1_score": 1.0,
+        "test_precision": 1.0,
+        "test_recall": 1.0,
+        "test_roc_auc": 1.0,
+        "training_time_seconds": 0.480902,
+        "train_accuracy": 1.0,
+        "train_f1_score": 1.0,
+        "train_precision": 1.0,
+        "train_recall": 1.0
+      },
+      "params": {
+        "learning_rate": "0.05",
+        "max_depth": "7",
+        "model_type": "GradientBoosting",
+        "n_estimators": "200",
+        "random_state": "42",
+        "subsample": "0.8"
+      },
+      "tags": {
+        "data_version": "v1.0",
+        "mlflow.runName": "gradient_boosting_tuned",
+        "mlflow.source.name": "C:\\Users\\abhis\\Downloads\\Data Science 2.0\\MLops\\mlflow_advanced.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis",
+        "model_type": "GradientBoostingClassifier",
+        "training_date": "2025-11-06T00:10:00.639389"
+      }
+    },
+    {
+      "run_id": "31638e7440094e7c927b450b3a45380a",
+      "start_time": "2025-11-06T00:09:45.857000",
+      "status": "FINISHED",
+      "metrics": {
+        "n_samples_test": 1000.0,
+        "n_samples_train": 4000.0,
+        "overfitting_gap": 0.0,
+        "test_accuracy": 1.0,
+        "test_f1_score": 1.0,
+        "test_precision": 1.0,
+        "test_recall": 1.0,
+        "test_roc_auc": 1.0,
+        "training_time_seconds": 0.283098,
+        "train_accuracy": 1.0,
+        "train_f1_score": 1.0,
+        "train_precision": 1.0,
+        "train_recall": 1.0
+      },
+      "params": {
+        "learning_rate": "0.1",
+        "max_depth": "5",
+        "model_type": "GradientBoosting",
+        "n_estimators": "100",
+        "random_state": "42"
+      },
+      "tags": {
+        "data_version": "v1.0",
+        "mlflow.runName": "gradient_boosting",
+        "mlflow.source.name": "C:\\Users\\abhis\\Downloads\\Data Science 2.0\\MLops\\mlflow_advanced.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis",
+        "model_type": "GradientBoostingClassifier",
+        "training_date": "2025-11-06T00:09:53.065872"
+      }
+    },
+    {
+      "run_id": "2d9f1fb6caef4c1a9e6b24116a6beb87",
+      "start_time": "2025-11-06T00:09:38.304000",
+      "status": "FINISHED",
+      "metrics": {
+        "n_samples_test": 1000.0,
+        "n_samples_train": 4000.0,
+        "overfitting_gap": 0.0,
+        "test_accuracy": 1.0,
+        "test_f1_score": 1.0,
+        "test_precision": 1.0,
+        "test_recall": 1.0,
+        "test_roc_auc": 1.0,
+        "training_time_seconds": 0.544495,
+        "train_accuracy": 1.0,
+        "train_f1_score": 1.0,
+        "train_precision": 1.0,
+        "train_recall": 1.0
+      },
+      "params": {
+        "max_depth": "20",
+        "min_samples_split": "5",
+        "model_type": "RandomForest",
+        "n_estimators": "200",
+        "random_state": "42"
+      },
+      "tags": {
+        "data_version": "v1.0",
+        "mlflow.runName": "random_forest_tuned",
+        "mlflow.source.name": "C:\\Users\\abhis\\Downloads\\Data Science 2.0\\MLops\\mlflow_advanced.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis",
+        "model_type": "RandomForestClassifier",
+        "training_date": "2025-11-06T00:09:45.841325"
+      }
+    },
+    {
+      "run_id": "15f3da4d810e46629ca7e7766c26e591",
+      "start_time": "2025-11-06T00:09:29.502000",
+      "status": "FINISHED",
+      "metrics": {
+        "n_samples_test": 1000.0,
+        "n_samples_train": 4000.0,
+        "overfitting_gap": 0.0,
+        "test_accuracy": 1.0,
+        "test_f1_score": 1.0,
+        "test_precision": 1.0,
+        "test_recall": 1.0,
+        "test_roc_auc": 1.0,
+        "training_time_seconds": 0.25399,
+        "train_accuracy": 1.0,
+        "train_f1_score": 1.0,
+        "train_precision": 1.0,
+        "train_recall": 1.0
+      },
+      "params": {
+        "max_depth": "None",
+        "model_type": "RandomForest",
+        "n_estimators": "100",
+        "random_state": "42"
+      },
+      "tags": {
+        "data_version": "v1.0",
+        "mlflow.runName": "random_forest_baseline",
+        "mlflow.source.name": "C:\\Users\\abhis\\Downloads\\Data Science 2.0\\MLops\\mlflow_advanced.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis",
+        "model_type": "RandomForestClassifier",
+        "training_date": "2025-11-06T00:09:38.289411"
+      }
+    },
+    {
+      "run_id": "f4f8832aa40044b68a93d39a37a98ee9",
+      "start_time": "2025-11-06T00:05:21.040000",
+      "status": "FINISHED",
+      "metrics": {
+        "n_samples_test": 1000.0,
+        "n_samples_train": 4000.0,
+        "overfitting_gap": 0.0,
+        "test_accuracy": 1.0,
+        "test_f1_score": 1.0,
+        "test_precision": 1.0,
+        "test_recall": 1.0,
+        "test_roc_auc": 1.0,
+        "training_time_seconds": 0.027974,
+        "train_accuracy": 1.0,
+        "train_f1_score": 1.0,
+        "train_precision": 1.0,
+        "train_recall": 1.0
+      },
+      "params": {
+        "max_iter": "1000",
+        "model_type": "LogisticRegression",
+        "random_state": "42",
+        "solver": "lbfgs"
+      },
+      "tags": {
+        "data_version": "v1.0",
+        "mlflow.runName": "logistic_regression",
+        "mlflow.source.name": "C:\\Users\\abhis\\Downloads\\Data Science 2.0\\MLops\\mlflow_advanced.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis",
+        "model_type": "LogisticRegression",
+        "training_date": "2025-11-06T00:05:28.220909"
+      }
+    },
+    {
+      "run_id": "92bb6c22ed3c4f9a9779494f719c1bbe",
+      "start_time": "2025-11-06T00:05:13.026000",
+      "status": "FINISHED",
+      "metrics": {
+        "n_samples_test": 1000.0,
+        "n_samples_train": 4000.0,
+        "overfitting_gap": 0.0,
+        "test_accuracy": 1.0,
+        "test_f1_score": 1.0,
+        "test_precision": 1.0,
+        "test_recall": 1.0,
+        "test_roc_auc": 1.0,
+        "training_time_seconds": 0.706871,
+        "train_accuracy": 1.0,
+        "train_f1_score": 1.0,
+        "train_precision": 1.0,
+        "train_recall": 1.0
+      },
+      "params": {
+        "learning_rate": "0.05",
+        "max_depth": "7",
+        "model_type": "GradientBoosting",
+        "n_estimators": "200",
+        "random_state": "42",
+        "subsample": "0.8"
+      },
+      "tags": {
+        "data_version": "v1.0",
+        "mlflow.runName": "gradient_boosting_tuned",
+        "mlflow.source.name": "C:\\Users\\abhis\\Downloads\\Data Science 2.0\\MLops\\mlflow_advanced.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis",
+        "model_type": "GradientBoostingClassifier",
+        "training_date": "2025-11-06T00:05:21.027055"
+      }
+    },
+    {
+      "run_id": "924a0ec40dc54aa88de4747df8ee7707",
+      "start_time": "2025-11-06T00:05:05.237000",
+      "status": "FINISHED",
+      "metrics": {
+        "n_samples_test": 1000.0,
+        "n_samples_train": 4000.0,
+        "overfitting_gap": 0.0,
+        "test_accuracy": 1.0,
+        "test_f1_score": 1.0,
+        "test_precision": 1.0,
+        "test_recall": 1.0,
+        "test_roc_auc": 1.0,
+        "training_time_seconds": 0.496319,
+        "train_accuracy": 1.0,
+        "train_f1_score": 1.0,
+        "train_precision": 1.0,
+        "train_recall": 1.0
+      },
+      "params": {
+        "learning_rate": "0.1",
+        "max_depth": "5",
+        "model_type": "GradientBoosting",
+        "n_estimators": "100",
+        "random_state": "42"
+      },
+      "tags": {
+        "data_version": "v1.0",
+        "mlflow.runName": "gradient_boosting",
+        "mlflow.source.name": "C:\\Users\\abhis\\Downloads\\Data Science 2.0\\MLops\\mlflow_advanced.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis",
+        "model_type": "GradientBoostingClassifier",
+        "training_date": "2025-11-06T00:05:13.012495"
+      }
+    },
+    {
+      "run_id": "f0b2d5b14c0e4bb4a5aea13cf98abf7a",
+      "start_time": "2025-11-06T00:04:57.069000",
+      "status": "FINISHED",
+      "metrics": {
+        "n_samples_test": 1000.0,
+        "n_samples_train": 4000.0,
+        "overfitting_gap": 0.0,
+        "test_accuracy": 1.0,
+        "test_f1_score": 1.0,
+        "test_precision": 1.0,
+        "test_recall": 1.0,
+        "test_roc_auc": 1.0,
+        "training_time_seconds": 0.419209,
+        "train_accuracy": 1.0,
+        "train_f1_score": 1.0,
+        "train_precision": 1.0,
+        "train_recall": 1.0
+      },
+      "params": {
+        "max_depth": "20",
+        "min_samples_split": "5",
+        "model_type": "RandomForest",
+        "n_estimators": "200",
+        "random_state": "42"
+      },
+      "tags": {
+        "data_version": "v1.0",
+        "mlflow.runName": "random_forest_tuned",
+        "mlflow.source.name": "C:\\Users\\abhis\\Downloads\\Data Science 2.0\\MLops\\mlflow_advanced.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis",
+        "model_type": "RandomForestClassifier",
+        "training_date": "2025-11-06T00:05:05.222518"
+      }
+    },
+    {
+      "run_id": "f20041ba7570431dae8caa89667a0ac9",
+      "start_time": "2025-11-06T00:04:47.720000",
+      "status": "FINISHED",
+      "metrics": {
+        "n_samples_test": 1000.0,
+        "n_samples_train": 4000.0,
+        "overfitting_gap": 0.0,
+        "test_accuracy": 1.0,
+        "test_f1_score": 1.0,
+        "test_precision": 1.0,
+        "test_recall": 1.0,
+        "test_roc_auc": 1.0,
+        "training_time_seconds": 0.324647,
+        "train_accuracy": 1.0,
+        "train_f1_score": 1.0,
+        "train_precision": 1.0,
+        "train_recall": 1.0
+      },
+      "params": {
+        "max_depth": "None",
+        "model_type": "RandomForest",
+        "n_estimators": "100",
+        "random_state": "42"
+      },
+      "tags": {
+        "data_version": "v1.0",
+        "mlflow.runName": "random_forest_baseline",
+        "mlflow.source.name": "C:\\Users\\abhis\\Downloads\\Data Science 2.0\\MLops\\mlflow_advanced.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis",
+        "model_type": "RandomForestClassifier",
+        "training_date": "2025-11-06T00:04:57.056333"
+      }
+    },
+    {
+      "run_id": "329d3558dfe04b1ea398ce987570b827",
+      "start_time": "2025-11-05T23:58:32.698000",
+      "status": "FINISHED",
+      "metrics": {
+        "n_samples_test": 1000.0,
+        "n_samples_train": 4000.0,
+        "overfitting_gap": 0.0,
+        "test_accuracy": 1.0,
+        "test_f1_score": 1.0,
+        "test_precision": 1.0,
+        "test_recall": 1.0,
+        "test_roc_auc": 1.0,
+        "training_time_seconds": 0.029756,
+        "train_accuracy": 1.0,
+        "train_f1_score": 1.0,
+        "train_precision": 1.0,
+        "train_recall": 1.0
+      },
+      "params": {
+        "max_iter": "1000",
+        "model_type": "LogisticRegression",
+        "random_state": "42",
+        "solver": "lbfgs"
+      },
+      "tags": {
+        "data_version": "v1.0",
+        "mlflow.runName": "logistic_regression",
+        "mlflow.source.name": "mlflow_advanced.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis",
+        "model_type": "LogisticRegression",
+        "training_date": "2025-11-05T23:58:38.365354"
+      }
+    },
+    {
+      "run_id": "57a8b752e72b411aa1a32818ab53fdde",
+      "start_time": "2025-11-05T23:58:26.194000",
+      "status": "FINISHED",
+      "metrics": {
+        "n_samples_test": 1000.0,
+        "n_samples_train": 4000.0,
+        "overfitting_gap": 0.0,
+        "test_accuracy": 1.0,
+        "test_f1_score": 1.0,
+        "test_precision": 1.0,
+        "test_recall": 1.0,
+        "test_roc_auc": 1.0,
+        "training_time_seconds": 0.547912,
+        "train_accuracy": 1.0,
+        "train_f1_score": 1.0,
+        "train_precision": 1.0,
+        "train_recall": 1.0
+      },
+      "params": {
+        "learning_rate": "0.05",
+        "max_depth": "7",
+        "model_type": "GradientBoosting",
+        "n_estimators": "200",
+        "random_state": "42",
+        "subsample": "0.8"
+      },
+      "tags": {
+        "data_version": "v1.0",
+        "mlflow.runName": "gradient_boosting_tuned",
+        "mlflow.source.name": "mlflow_advanced.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis",
+        "model_type": "GradientBoostingClassifier",
+        "training_date": "2025-11-05T23:58:32.685813"
+      }
+    },
+    {
+      "run_id": "fcad6c859f3a4eee93fca1e84d1a49c0",
+      "start_time": "2025-11-05T23:58:19.628000",
+      "status": "FINISHED",
+      "metrics": {
+        "n_samples_test": 1000.0,
+        "n_samples_train": 4000.0,
+        "overfitting_gap": 0.0,
+        "test_accuracy": 1.0,
+        "test_f1_score": 1.0,
+        "test_precision": 1.0,
+        "test_recall": 1.0,
+        "test_roc_auc": 1.0,
+        "training_time_seconds": 0.281907,
+        "train_accuracy": 1.0,
+        "train_f1_score": 1.0,
+        "train_precision": 1.0,
+        "train_recall": 1.0
+      },
+      "params": {
+        "learning_rate": "0.1",
+        "max_depth": "5",
+        "model_type": "GradientBoosting",
+        "n_estimators": "100",
+        "random_state": "42"
+      },
+      "tags": {
+        "data_version": "v1.0",
+        "mlflow.runName": "gradient_boosting",
+        "mlflow.source.name": "mlflow_advanced.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis",
+        "model_type": "GradientBoostingClassifier",
+        "training_date": "2025-11-05T23:58:26.180573"
+      }
+    },
+    {
+      "run_id": "a194d744dc504957b9c134f914090827",
+      "start_time": "2025-11-05T23:58:13.130000",
+      "status": "FINISHED",
+      "metrics": {
+        "n_samples_test": 1000.0,
+        "n_samples_train": 4000.0,
+        "overfitting_gap": 0.0,
+        "test_accuracy": 1.0,
+        "test_f1_score": 1.0,
+        "test_precision": 1.0,
+        "test_recall": 1.0,
+        "test_roc_auc": 1.0,
+        "training_time_seconds": 0.386686,
+        "train_accuracy": 1.0,
+        "train_f1_score": 1.0,
+        "train_precision": 1.0,
+        "train_recall": 1.0
+      },
+      "params": {
+        "max_depth": "20",
+        "min_samples_split": "5",
+        "model_type": "RandomForest",
+        "n_estimators": "200",
+        "random_state": "42"
+      },
+      "tags": {
+        "data_version": "v1.0",
+        "mlflow.runName": "random_forest_tuned",
+        "mlflow.source.name": "mlflow_advanced.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis",
+        "model_type": "RandomForestClassifier",
+        "training_date": "2025-11-05T23:58:19.610874"
+      }
+    },
+    {
+      "run_id": "e87fa1b8359f466ba7d93a818e7761d2",
+      "start_time": "2025-11-05T23:58:04.087000",
+      "status": "FINISHED",
+      "metrics": {
+        "n_samples_test": 1000.0,
+        "n_samples_train": 4000.0,
+        "overfitting_gap": 0.0,
+        "test_accuracy": 1.0,
+        "test_f1_score": 1.0,
+        "test_precision": 1.0,
+        "test_recall": 1.0,
+        "test_roc_auc": 1.0,
+        "training_time_seconds": 0.259798,
+        "train_accuracy": 1.0,
+        "train_f1_score": 1.0,
+        "train_precision": 1.0,
+        "train_recall": 1.0
+      },
+      "params": {
+        "max_depth": "None",
+        "model_type": "RandomForest",
+        "n_estimators": "100",
+        "random_state": "42"
+      },
+      "tags": {
+        "data_version": "v1.0",
+        "mlflow.runName": "random_forest_baseline",
+        "mlflow.source.name": "mlflow_advanced.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis",
+        "model_type": "RandomForestClassifier",
+        "training_date": "2025-11-05T23:58:13.113810"
+      }
+    },
+    {
+      "run_id": "cf2b1684f7894f61bb78760ca85ce1c8",
+      "start_time": "2025-11-05T23:53:31.812000",
+      "status": "FINISHED",
+      "metrics": {
+        "accuracy": 1.0,
+        "f1_score": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "roc_auc": 1.0
+      },
+      "params": {
+        "learning_rate": "0.1",
+        "model_type": "gradient_boosting",
+        "n_estimators": "100"
+      },
+      "tags": {
+        "mlflow.runName": "gradient_boosting",
+        "mlflow.source.name": "pipeline_orchestration.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis"
+      }
+    },
+    {
+      "run_id": "38fdc8008bd340d3b94823626f6063fc",
+      "start_time": "2025-11-05T23:53:26.733000",
+      "status": "FINISHED",
+      "metrics": {
+        "accuracy": 1.0,
+        "f1_score": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "roc_auc": 1.0
+      },
+      "params": {
+        "max_depth": "20",
+        "model_type": "random_forest_tuned",
+        "n_estimators": "200"
+      },
+      "tags": {
+        "mlflow.runName": "random_forest_tuned",
+        "mlflow.source.name": "pipeline_orchestration.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis"
+      }
+    },
+    {
+      "run_id": "b018945ef42343eabf6f43ddbeaa84aa",
+      "start_time": "2025-11-05T23:53:21.234000",
+      "status": "FINISHED",
+      "metrics": {
+        "accuracy": 1.0,
+        "f1_score": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "roc_auc": 1.0
+      },
+      "params": {
+        "model_type": "random_forest",
+        "n_estimators": "100"
+      },
+      "tags": {
+        "mlflow.runName": "random_forest_baseline",
+        "mlflow.source.name": "pipeline_orchestration.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis"
+      }
+    },
+    {
+      "run_id": "5f03010c77654305aac52bedc1811e23",
+      "start_time": "2025-11-05T23:52:48.601000",
+      "status": "FINISHED",
+      "metrics": {
+        "accuracy": 1.0,
+        "f1_score": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "roc_auc": 1.0
+      },
+      "params": {
+        "learning_rate": "0.1",
+        "model_type": "gradient_boosting",
+        "n_estimators": "100"
+      },
+      "tags": {
+        "mlflow.runName": "gradient_boosting",
+        "mlflow.source.name": "pipeline_orchestration.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis"
+      }
+    },
+    {
+      "run_id": "f16b179884f5441597e6eefef5b1d0a4",
+      "start_time": "2025-11-05T23:52:43.572000",
+      "status": "FINISHED",
+      "metrics": {
+        "accuracy": 1.0,
+        "f1_score": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "roc_auc": 1.0
+      },
+      "params": {
+        "max_depth": "20",
+        "model_type": "random_forest_tuned",
+        "n_estimators": "200"
+      },
+      "tags": {
+        "mlflow.runName": "random_forest_tuned",
+        "mlflow.source.name": "pipeline_orchestration.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis"
+      }
+    },
+    {
+      "run_id": "9b3a32cba4504b0298fdb6a066379eff",
+      "start_time": "2025-11-05T23:52:37.833000",
+      "status": "FINISHED",
+      "metrics": {
+        "accuracy": 1.0,
+        "f1_score": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "roc_auc": 1.0
+      },
+      "params": {
+        "model_type": "random_forest",
+        "n_estimators": "100"
+      },
+      "tags": {
+        "mlflow.runName": "random_forest_baseline",
+        "mlflow.source.name": "pipeline_orchestration.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis"
+      }
+    },
+    {
+      "run_id": "d01c66d8e31a42bfa7732af8c8758457",
+      "start_time": "2025-11-05T23:52:11.840000",
+      "status": "FAILED",
+      "metrics": {},
+      "params": {},
+      "tags": {
+        "mlflow.runName": "random_forest_baseline",
+        "mlflow.source.name": "pipeline_orchestration.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis"
+      }
+    },
+    {
+      "run_id": "d4c96bc0c77b47a7a607c2595349100f",
+      "start_time": "2025-11-05T23:51:23.857000",
+      "status": "FAILED",
+      "metrics": {},
+      "params": {},
+      "tags": {
+        "mlflow.runName": "random_forest_baseline",
+        "mlflow.source.name": "pipeline_orchestration.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis"
+      }
+    },
+    {
+      "run_id": "644eda524bff4adab034cf041aacc57d",
+      "start_time": "2025-11-05T23:50:40.693000",
+      "status": "FAILED",
+      "metrics": {},
+      "params": {},
+      "tags": {
+        "mlflow.runName": "random_forest_baseline",
+        "mlflow.source.name": "pipeline_orchestration.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis"
+      }
+    },
+    {
+      "run_id": "2bb940084d4041e08d6776af92220bfe",
+      "start_time": "2025-11-05T23:50:06.040000",
+      "status": "FAILED",
+      "metrics": {},
+      "params": {},
+      "tags": {
+        "mlflow.runName": "random_forest_baseline",
+        "mlflow.source.name": "pipeline_orchestration.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis"
+      }
+    },
+    {
+      "run_id": "9f078ee848024cf8865eba9f05992b5c",
+      "start_time": "2025-11-05T23:36:31.084000",
+      "status": "FINISHED",
+      "metrics": {
+        "accuracy": 1.0,
+        "f1_score": 1.0,
+        "feature_importance_current": 0.5612801735418581,
+        "feature_importance_pressure": 0.039345684323454956,
+        "feature_importance_rpm": 0.24195031275076737,
+        "feature_importance_temperature": 0.07901455396843479,
+        "feature_importance_vibration": 0.07840927541548488,
+        "precision": 1.0,
+        "recall": 1.0,
+        "roc_auc": 1.0
+      },
+      "params": {
+        "learning_rate": "0.1",
+        "max_depth": "5",
+        "model_type": "GradientBoosting",
+        "n_estimators": "100",
+        "random_state": "42"
+      },
+      "tags": {
+        "mlflow.runName": "GradientBoosting",
+        "mlflow.source.name": "mlflow_quickstart.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis"
+      }
+    },
+    {
+      "run_id": "69ad07402b584f4682058310264d23d0",
+      "start_time": "2025-11-05T23:36:25.371000",
+      "status": "FINISHED",
+      "metrics": {
+        "accuracy": 1.0,
+        "f1_score": 1.0,
+        "feature_importance_current": 0.205,
+        "feature_importance_pressure": 0.19,
+        "feature_importance_rpm": 0.215,
+        "feature_importance_temperature": 0.205,
+        "feature_importance_vibration": 0.185,
+        "precision": 1.0,
+        "recall": 1.0,
+        "roc_auc": 1.0
+      },
+      "params": {
+        "max_depth": "15",
+        "min_samples_leaf": "2",
+        "min_samples_split": "5",
+        "model_type": "RandomForest",
+        "n_estimators": "200",
+        "random_state": "42"
+      },
+      "tags": {
+        "mlflow.runName": "RandomForest_Tuned",
+        "mlflow.source.name": "mlflow_quickstart.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis"
+      }
+    },
+    {
+      "run_id": "9e23544ad6b9419c931987686e9ac334",
+      "start_time": "2025-11-05T23:36:15.771000",
+      "status": "FINISHED",
+      "metrics": {
+        "accuracy": 1.0,
+        "f1_score": 1.0,
+        "feature_importance_current": 0.23,
+        "feature_importance_pressure": 0.15,
+        "feature_importance_rpm": 0.21,
+        "feature_importance_temperature": 0.22,
+        "feature_importance_vibration": 0.19,
+        "precision": 1.0,
+        "recall": 1.0,
+        "roc_auc": 1.0
+      },
+      "params": {
+        "max_depth": "10",
+        "min_samples_split": "2",
+        "model_type": "RandomForest",
+        "n_estimators": "100",
+        "random_state": "42"
+      },
+      "tags": {
+        "mlflow.runName": "RandomForest_Baseline",
+        "mlflow.source.name": "mlflow_quickstart.py",
+        "mlflow.source.type": "LOCAL",
+        "mlflow.user": "abhis"
+      }
+    }
+  ]
+}
