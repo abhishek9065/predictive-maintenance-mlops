@@ -1,0 +1,40 @@
+{
+  "generation_date": "2025-11-06T16:15:12.259838",
+  "datasets": {
+    "full_dataset": {
+      "samples": 20000,
+      "features": 19,
+      "memory_mb": 4.817609786987305,
+      "normal_samples": 13000,
+      "failure_samples": 7000
+    },
+    "train": {
+      "samples": 16000,
+      "features": 19,
+      "memory_mb": 4.921900749206543,
+      "normal_samples": 10417,
+      "failure_samples": 5583
+    },
+    "test": {
+      "samples": 4000,
+      "features": 19,
+      "memory_mb": 1.2309789657592773,
+      "normal_samples": 2583,
+      "failure_samples": 1417
+    },
+    "validation": {
+      "samples": 2000,
+      "features": 19,
+      "memory_mb": 0.6154184341430664,
+      "normal_samples": 1301,
+      "failure_samples": 699
+    },
+    "train_augmented": {
+      "samples": 18945,
+      "features": 19,
+      "memory_mb": 5.843217849731445,
+      "normal_samples": 10417,
+      "failure_samples": 8528
+    }
+  }
+}

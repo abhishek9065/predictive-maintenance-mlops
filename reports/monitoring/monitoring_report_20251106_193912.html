@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ML Monitoring Report - 20251106_193912</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: auto; background: white; padding: 30px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; border-bottom: 2px solid #ecf0f1; padding-bottom: 5px; }
+        .metric { background: #ecf0f1; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .metric strong { color: #2c3e50; }
+        .success { color: #27ae60; }
+        .warning { color: #f39c12; }
+        .error { color: #e74c3c; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { padding: 12px; text-align: left; border: 1px solid #ddd; }
+        th { background: #3498db; color: white; }
+        tr:nth-child(even) { background: #f9f9f9; }
+        .dashboard-image { width: 100%; max-width: 1000px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 ML Model Monitoring Report</h1>
+        <p><strong>Generated:</strong> 2025-11-06T19:39:13.868500</p>
+        
+        <h2>📊 Data Overview</h2>
+        <div class="metric">
+            <strong>Reference Data:</strong> 18945 samples<br>
+            <strong>Current Data:</strong> 4000 samples
+        </div>
+        
+        <h2>🎯 Prediction Summary</h2>
+        <div class="metric">
+            <strong>Total Predictions:</strong> 4000<br>
+            <strong class="success">Normal Operations:</strong> 2670 (66.8%)<br>
+            <strong class="error">Failures Detected:</strong> 1330 (33.2%)<br>
+            <strong>Failure Rate:</strong> 33.2%
+        </div>
+        
+        <h2>📈 Model Performance</h2>
+        
+        <h2>🔍 Prediction Quality</h2>
+        <div class="metric">
+            <strong>Average Confidence:</strong> 93.8%<br>
+            <strong class="warning">Low Confidence Predictions:</strong> 191<br>
+            <strong class="error">High Risk Samples:</strong> 1223
+        </div>
+        
+        <h2>📊 Data Drift Analysis</h2>
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>Reference Mean</th>
+                <th>Current Mean</th>
+                <th>Mean Shift %</th>
+                <th>Status</th>
+            </tr>
+        
+            <tr>
+                <td>temperature</td>
+                <td>74.80</td>
+                <td>73.15</td>
+                <td>2.2%</td>
+                <td><span class="success">✅ OK</span></td>
+            </tr>
+            
+            <tr>
+                <td>vibration</td>
+                <td>0.57</td>
+                <td>0.52</td>
+                <td>9.3%</td>
+                <td><span class="success">✅ OK</span></td>
+            </tr>
+            
+            <tr>
+                <td>pressure</td>
+                <td>93.83</td>
+                <td>94.00</td>
+                <td>0.2%</td>
+                <td><span class="success">✅ OK</span></td>
+            </tr>
+            
+            <tr>
+                <td>rpm</td>
+                <td>1455.64</td>
+                <td>1450.46</td>
+                <td>0.4%</td>
+                <td><span class="success">✅ OK</span></td>
+            </tr>
+            
+            <tr>
+                <td>current</td>
+                <td>9.19</td>
+                <td>8.92</td>
+                <td>2.9%</td>
+                <td><span class="success">✅ OK</span></td>
+            </tr>
+            
+        </table>
+        
+        <h2>📊 Monitoring Dashboard</h2>
+        <img src="{dashboard_image}" class="dashboard-image" alt="Monitoring Dashboard">
+        
+    </div>
+</body>
+</html>
+        

@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-11-06T19:39:13.868500",
+  "reference_data_samples": 18945,
+  "current_data_samples": 4000,
+  "predictions": {
+    "total": 4000,
+    "normal": 2670,
+    "failure": 1330,
+    "failure_rate": 0.3325
+  },
+  "performance": null,
+  "drift": {
+    "temperature": {
+      "reference_mean": 74.79743439835197,
+      "current_mean": 73.15054475523644,
+      "mean_diff_pct": 2.2017996424110167,
+      "reference_std": 11.550079250952756,
+      "current_std": 10.349926250835825,
+      "std_diff_pct": 10.39086376847095,
+      "drift_detected": false
+    },
+    "vibration": {
+      "reference_mean": 0.5726206793651334,
+      "current_mean": 0.5193936766877442,
+      "mean_diff_pct": 9.29533364676983,
+      "reference_std": 0.48653636109981935,
+      "current_std": 0.4557682418289465,
+      "std_diff_pct": 6.32390952267602,
+      "drift_detected": false
+    },
+    "pressure": {
+      "reference_mean": 93.82856321904364,
+      "current_mean": 94.00028142644419,
+      "mean_diff_pct": 0.1830127218293509,
+      "reference_std": 8.198665242191536,
+      "current_std": 7.0907475837313605,
+      "std_diff_pct": 13.513390603615191,
+      "drift_detected": false
+    },
+    "rpm": {
+      "reference_mean": 1455.644959333232,
+      "current_mean": 1450.4648612703807,
+      "mean_diff_pct": 0.35586274177902116,
+      "reference_std": 64.10311028807614,
+      "current_std": 52.91274082223117,
+      "std_diff_pct": 17.456827625923317,
+      "drift_detected": false
+    },
+    "current": {
+      "reference_mean": 9.188154248986338,
+      "current_mean": 8.919849036887292,
+      "mean_diff_pct": 2.920120895104105,
+      "reference_std": 3.384521349234551,
+      "current_std": 3.2332796541364277,
+      "std_diff_pct": 4.4686287806199925,
+      "drift_detected": false
+    }
+  },
+  "quality": {
+    "avg_confidence": 0.9375057792533644,
+    "low_confidence_count": 191,
+    "high_risk_count": 1223
+  },
+  "dashboard_path": "reports\\monitoring\\monitoring_dashboard_20251106_193912.png"
+}

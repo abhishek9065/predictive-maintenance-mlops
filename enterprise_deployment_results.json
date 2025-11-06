@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "tensorflow": true,
+    "evidently": true,
+    "prometheus_client": true,
+    "kubernetes": true,
+    "fastapi": true,
+    "bentoml": true
+  },
+  "tflite": {
+    "status": "success",
+    "model_path": "models\\edge\\predictive_maintenance_edge.tflite",
+    "size_kb": 9.23046875
+  },
+  "evidently": {
+    "status": "error",
+    "message": "Command '['C:\\\\Users\\\\abhis\\\\Downloads\\\\Data Science 2.0\\\\MLops\\\\venv\\\\Scripts\\\\python.exe', 'src/monitoring/evidently_monitor.py', '--reference', 'data/train.csv', '--current', 'data/test.csv', '--output', 'reports/evidently']' returned non-zero exit status 1."
+  },
+  "prometheus": {
+    "status": "success",
+    "endpoint": "http://localhost:8000/metrics"
+  },
+  "jenkins": {
+    "status": "success",
+    "path": "Jenkinsfile"
+  },
+  "opa": {
+    "status": "success",
+    "policies_dir": "policies"
+  },
+  "rbac": {
+    "status": "success",
+    "path": "kubernetes\\rbac.yaml"
+  }
+}
